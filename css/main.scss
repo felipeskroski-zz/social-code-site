@@ -2,7 +2,7 @@
 ---
 /* Fonts */
 /* ----------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:300,700|PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700|PT+Mono);
 
 /* Variables */
 /* ----------------------------------------------------------*/
@@ -16,12 +16,18 @@ $facebook-color: #36549A;
 $twitter-color: #2CA9E0;
 $youtube-color: #E74C3A;
 $white-color: #fff;
+$myviva: #50258B;
+$sclightblue: #80D1E7;
+$scgreen: #48BD9E;
+$scpurple: #664E93;
+$scyellow: #FED672;
 
 
 /* Base */
 /* ----------------------------------------------------------*/
 body{
   font-family: $primary-font;
+  font-weight: 300;
   font-size: 1.8em;
   color: $font-color;
   background-color: $bg-color;
@@ -43,6 +49,7 @@ a{
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
+h3{font-size:28px;}
 hr{
   background: rgba(black, 0.1);
   border-color: rgba(black, 0.1);
@@ -69,13 +76,13 @@ footer {
 .site-title{
   background: transparent url(/assets/img/logo.svg) no-repeat left center;
   background-size: 210px auto;
-  height: 70px;
+  height: 64px;
   width: 500px;
   display: block;
   float: left;
 }
 nav{
-  top: 25px; 
+  top: 24px; 
   right: 0px; 
   font-size: 16px;
   position: relative;
@@ -93,7 +100,7 @@ nav{
 }
 .social-nav{
   float: left;
-  margin: -3px 0 0 25px;
+  margin: -4px 0 0 25px;
   a{
     color: $white-color;
     background-repeat: no-repeat;
@@ -138,17 +145,47 @@ PAGE SPECIFIC
 
 /* Home */
 /* ----------------------------------------------------------*/
+.home-bg{
+  background: transparent url(/assets/img/bg-home.jpg) no-repeat left center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
 .home{
   padding: 100px 0;
-  background-image: transparent url(/assets/img/bg-home.jpg) no-repeat left center;
   h1{
-    font-weight: normal; 
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.3em;
+    color: $white-color;
+    strong{
+      color: $myviva;
+      font-weight: normal;
+      text-shadow: none;
+    }
   }
   h2{
-    font-weight: normal;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 17px;
     line-height: 1.5em;
+    letter-spacing: 0.02em;
   }
+}
+.hand{
+  background: transparent url(/assets/img/img-home-hand.jpg) no-repeat left center; 
+  width: 480px;
+  height: 100%;
+}
+.intro{
+  max-width: 420px;
+  margin-top: 40px;
 }
 
 .work{
@@ -163,6 +200,41 @@ PAGE SPECIFIC
     display: none; 
   }
 }
+/* Partners in Home */
+.partners{
+  margin-top: 100px;
+}
+.circle{
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  background-color: red;
+  margin: 0 auto;
+}
+.partners-layout{
+  margin: 0 auto;
+}
+.patients{
+  .circle{
+    background: $sclightblue url(/assets/img/icon-patients-.png) no-repeat top 25px left 37px;
+  }
+}
+.providers{
+  .circle{
+    background: $scgreen url(/assets/img/icon-providers.svg) no-repeat top 42px left 39px;
+  }
+}
+.pharma{
+  .circle{
+    background: $scpurple url(/assets/img/icon-pharma.png) no-repeat top 37px left 42px;
+  }
+}
+.insurers{
+  .circle{
+    background: $scyellow url(/assets/img/icon-insurers.svg) no-repeat top 32px left 43px;
+  }
+}
+
 
 /* Generic */
 /* ----------------------------------------------------------*/
@@ -172,6 +244,12 @@ PAGE SPECIFIC
 .left{
     float:left; 
   }
+
+.z-show{
+  z-index: 1;
+}
+
+
 
 
   /* icons */
@@ -193,6 +271,11 @@ PAGE SPECIFIC
   top: 0;
   left: 0;
   right: 0;
+}
+
+.background{
+  color: $white-color;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.20);
 }
 
 

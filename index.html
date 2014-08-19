@@ -2,93 +2,53 @@
 layout: default
 ---
 <div class="container">
-  <div class="row home">
-    <div class="col-md-8">
-      <h1>Socialcode xxxx</h1>
-      <h2>Start with this basic HTML template, or modify these examples. We hope you'll customize our templates and examples, adapting them to suit your needs. <a href="{{ site.url }}/about">Learn more.</a></h2>
+  <div class="row home background">
+    <div class="col-md-8 z-show intro">
+      <h1>Everything we do, we do to help people lead <strong>healthier, happier lives.</strong></h1>
+      <h2>Redefining healthcare through personalized, portable and participatory patient engagement.</h2>
     </div>
+    <div class="hand"></div>
+    <div class="home-bg"></div>
   </div>
 </div>
-<div class="work">
+<div class="partners">
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-3 patients">
+      <div class="partners-layout">
+        <div class="circle"></div>
+        <h3>Partners</h3>
+        <p>We help patients manage their own health by improving their understanding of their disease and providing behavior change tools, peer and professional support.</p>
+      </div>
       <h2>Work</h2>
     </div>
-    {% for page in site.pages %}
-        {% if page.categories contains 'work' %}
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="{{page.cover-image}}">
-              <div class="caption">
-                <h3>{{page.title}}</h3>
-                <p>{{page.description}}</p>
-              </div>
-            </div>
-          </div>
-      {% endif %}
-    {% endfor %}
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/360x240">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>description goes here</p>
+    <div class="col-md-3 providers">
+      <div class="partners-layout">
+        <div class="circle">
+          <h3>{{page.title}}</h3>
+          <p>{{page.description}}</p>
         </div>
       </div>
+      <h2>Work</h2>
     </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/360x240">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>description goes here</p>
+    <div class="col-md-3 pharma">
+      <div class="partners-layout">
+        <div class="circle">
+          <h3>{{page.title}}</h3>
+          <p>{{page.description}}</p>
         </div>
       </div>
+      <h2>Work</h2>
     </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/360x240">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>description goes here</p>
+    <div class="col-md-3 insurers">
+      <div class="partners-layout">
+        <div class="circle">
+          <h3>{{page.title}}</h3>
+          <p>{{page.description}}</p>
         </div>
       </div>
+      <h2>Work</h2>
     </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/360x240">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>description goes here</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/360x240">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>description goes here</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/360x240">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>description goes here</p>
-        </div>
-      </div>
-    </div>
-
-
   </div>
 </div>
 </div>
