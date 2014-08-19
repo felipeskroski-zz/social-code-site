@@ -17,6 +17,7 @@ $twitter-color: #2CA9E0;
 $youtube-color: #E74C3A;
 $white-color: #fff;
 $myviva: #50258B;
+$scblue: #4FCBE0;
 $sclightblue: #80D1E7;
 $scgreen: #48BD9E;
 $scpurple: #664E93;
@@ -48,8 +49,8 @@ a{
   }
 }
 h1{font-size: 48px;}
-h2{font-size: 36px;}
-h3{font-size:28px;}
+h2{font-size: 36px;font-weight: 300;}
+h3{font-size:28px;font-weight: 300;}
 hr{
   background: rgba(black, 0.1);
   border-color: rgba(black, 0.1);
@@ -200,9 +201,19 @@ PAGE SPECIFIC
     display: none; 
   }
 }
-/* Partners in Home */
-.partners{
+/* about-icons in Home */
+.about-icons{
   margin-top: 100px;
+  text-align: center;
+  h3{  
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    margin-top: 12px;
+  }
+  p{
+    font-size: 15px;
+    line-height: 1.4em;
+  }
 }
 .circle{
   border-radius: 50%;
@@ -211,28 +222,94 @@ PAGE SPECIFIC
   background-color: red;
   margin: 0 auto;
 }
-.partners-layout{
+.about-icons-layout{
   margin: 0 auto;
 }
 .patients{
   .circle{
     background: $sclightblue url(/assets/img/icon-patients-.png) no-repeat top 25px left 37px;
   }
+  h3{
+    color: $sclightblue;
+    border-color: $sclightblue;
+  }
 }
 .providers{
   .circle{
     background: $scgreen url(/assets/img/icon-providers.svg) no-repeat top 42px left 39px;
+  }
+  h3{
+    color: $scgreen;
+    border-color: $scgreen;
   }
 }
 .pharma{
   .circle{
     background: $scpurple url(/assets/img/icon-pharma.png) no-repeat top 37px left 42px;
   }
+  h3{
+    color: $scpurple;
+    border-color: $scpurple;
+  }
 }
 .insurers{
   .circle{
     background: $scyellow url(/assets/img/icon-insurers.svg) no-repeat top 32px left 43px;
   }
+  h3{
+    color: #F2C751;
+    border-color: #F2C751;
+  }
+}
+
+/* Partners in Home */
+.partners{
+  background-color: #3cbbdb;
+  margin-top: 30px;
+  color: $white-color;
+  padding: 20px 0 30px;
+  h3{
+    text-align: center;
+    font-weight: 100;
+  }
+  h3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 59px;
+  right: 59px;
+  bottom: -3px;
+  height: 3px;
+  background-color: #fff;
+  width: 115px;
+  margin: 0 auto;
+  }
+}
+.underline {
+  max-width: 200px;
+  border-bottom: solid 1px $white-color;
+  margin: 0 auto;
+}
+
+.partners-quitline{
+  background: transparent url(/assets/img/partners-quitline.png) no-repeat left center;
+  height: 110px;
+}
+.partners-pfizer{
+  background: transparent url(/assets/img/partners-pfizer.png) no-repeat left center;
+  height: 110px;
+}
+.partners-open{
+  background: transparent url(/assets/img/partners-open.png) no-repeat left center;
+  height: 110px;
+}
+.partners-acc{
+  background: transparent url(/assets/img/partners-acc.png) no-repeat left center;
+  height: 110px;
+}
+.partners-smokefree{
+  background: transparent url(/assets/img/partners-smokefree.png) no-repeat left center;
+  height: 110px;
 }
 
 
