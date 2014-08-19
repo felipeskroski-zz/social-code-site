@@ -1,0 +1,33 @@
+---
+---
+
+/* Mobile */
+@media (max-width: 423px) {
+  .about-icons {
+  	margin-top: 10px;
+  	.col-xs-6 {
+    	width: 99%;
+  	}
+
+  }
+  .home h1 {
+	font-size: 28px;
+  }
+  .partners{
+  	.col-xs-6 {
+    	background-size: 80%;
+  	}
+  }
+}
+
+
+/*  iPad etc */
+
+@media (min-width: 423px) and (max-width: 990px) {
+  .about-icons {
+  	.col-xs-6 {
+    	width: 49%;
+  	}
+  }
+
+}
