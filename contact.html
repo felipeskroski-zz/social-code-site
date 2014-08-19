@@ -1,0 +1,96 @@
+---
+layout: default
+title: Contact
+
+---
+<div class="container">
+  <div class="row home">
+    <div class="col-md-8">
+      <h1>Socialcode xxxx</h1>
+      <h2>Start with this basic HTML template, or modify these examples. We hope you'll customize our templates and examples, adapting them to suit your needs. <a href="{{ site.url }}/about">Learn more.</a></h2>
+    </div>
+  </div>
+</div>
+<div class="work">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Work</h2>
+    </div>
+    {% for page in site.pages %}
+        {% if page.categories contains 'work' %}
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="{{page.cover-image}}">
+              <div class="caption">
+                <h3>{{page.title}}</h3>
+                <p>{{page.description}}</p>
+              </div>
+            </div>
+          </div>
+      {% endif %}
+    {% endfor %}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/360x240">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>description goes here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/360x240">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>description goes here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/360x240">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>description goes here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/360x240">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>description goes here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/360x240">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>description goes here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/360x240">
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>description goes here</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</div>
