@@ -138,12 +138,24 @@ nav{
 /* Footer */
 /* ----------------------------------------------------------*/
 footer {
-  padding: 20px 20px 30px;
+  padding: 40px 20px 30px;
+  font-size:15px;
   h3{
     text-transform: uppercase;
     color: $scpink;
     font-size: 18px;
   }
+  .contact-detail{
+    text-align: right;
+    .telephone {
+      text-align: right;
+    }
+    .address {
+    float: left;
+    text-align: left;
+    }
+  }
+ 
 }
 /* ----------------------------------------------------------
 **
@@ -377,6 +389,13 @@ PAGE SPECIFIC
 .bottom-m-20{
   margin-bottom: 20px;
 }
+ul{
+  padding: 0;
+  &.none{
+    list-style-type: none;  
+  }
+}
+
 
 
 
