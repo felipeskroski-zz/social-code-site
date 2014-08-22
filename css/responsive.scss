@@ -31,3 +31,35 @@
   }
 
 }
+/*  Hero home */
+@media (max-width: 940px) {
+  footer .contact-detail {
+    text-align: left;
+    .telephone{
+      margin-left: 0;
+    }
+  }
+}
+
+/*  Footer */
+
+@media (max-width: 580px) {
+  footer .contact-detail {
+    text-align: left;
+    .telephone{
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 440px) and (max-width: 580px) {
+  footer .contact-detail {
+    text-align: left;
+    .telephone{
+      margin-left: 10px;
+      clear: left;
+      display: block;
+    }
+  }
+}
+
