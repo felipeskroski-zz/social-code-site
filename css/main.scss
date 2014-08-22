@@ -75,7 +75,7 @@ hr{
   background: transparent url(/assets/img/logo.svg) no-repeat left center;
   background-size: 210px auto;
   height: 64px;
-  width: 500px;
+  width: 205px;
   display: block;
   float: left;
 }
@@ -158,18 +158,48 @@ footer {
       text-align: left;
     }
   }
+  .facebook-color{
+    color: $facebook-color;
+  }
+  .twitter-color{
+    color: $twitter-color;
+  }
+  .youtube-color{
+    color: $youtube-color;
+  }
   .social-footer{
+    margin-top: 30px;
+    .col-md-4{
+      padding-right: 0;
+    }
+    a {
+      margin-bottom: 10px;
+    }
+    a:hover{
+        opacity:0.8;
+    }
     .btn-social{
       border: 1px red solid;
       height: 40px;
       width: auto;
       margin-right: 5px;
       border-radius: 5px 5px 5px 5px;
-      p{
-        padding-top: 8px;
-      }
     }
-    a{
+    .social-text{
+      padding-top: 9px;
+      border-radius: 5px 5px 5px 5px;
+      border: 1px #B8CED4 solid;
+      display: block;
+      height: 40px;
+      margin-left: 40px;
+      &.youtube-color{
+        border: 1px #F6C0BA solid;
+      }  
+      &.facebook-color{
+        border: 1px #B9C5DE solid;
+      } 
+    }
+    .icon-nav{
       color: $white-color;
       background-repeat: no-repeat;
       width: 43px;
@@ -186,11 +216,8 @@ footer {
       -moz-transition: opacity .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out;
       padding: 1px;
-      &:hover{
-        opacity:0.8;
     }
   }
-}
  
 }
 

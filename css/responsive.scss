@@ -65,20 +65,16 @@
   }
 }
 @media (max-width: 940px) {
-
-
-  /*.home-bg{
-    top: 0;
-    height: auto;
-  }
-  .home {
-    /*padding: 0; 
-  }*/
   .intro {
     margin-top: 20px;
   }
 }
-
+/*  Footer */
+@media (max-width: 800px) {
+  .nav-list {
+    display: none;
+  }
+}
 /*  Footer */
 
 @media (max-width: 580px) {
