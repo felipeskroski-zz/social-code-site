@@ -140,8 +140,12 @@ nav{
 /* Footer */
 /* ----------------------------------------------------------*/
 footer {
-  padding: 40px 20px 30px;
-  font-size:15px;
+  padding: 40px 0 0;
+  font-size: 15px;
+  margin: 0 auto;
+  .main-foot{
+    margin-bottom: 50px;
+  }
   h3{
     text-transform: uppercase;
     color: $scpink;
@@ -157,6 +161,28 @@ footer {
       float: left;
       text-align: left;
     }
+  }
+  .latest-tweet{
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px #95E3F2 solid;
+    padding: 10px 15px 3px;
+    &:after{
+      content: "";
+      background: transparent url(/assets/img/twitter-speech.png) no-repeat bottom center;
+      background-position: center bottom;
+      height: 59px;
+      width: 41px;
+
+    }
+  }
+  .bottom-footer{
+    background: #AFCBD3;
+    color: white;
+    font-size: 13px;
+    padding: 14px 30px;
+    bottom: 0;
+    height: 45px;
   }
   .facebook-color{
     color: $facebook-color;
@@ -355,7 +381,7 @@ PAGE SPECIFIC
 
 /* Partners in Home */
 .partners{
-  background-color: #3cbbdb;
+  background-color: #49c5dd;
   color: $white-color;
   padding: 20px 20px 30px;
   h3{

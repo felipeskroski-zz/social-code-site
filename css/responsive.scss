@@ -85,7 +85,17 @@
     }
   }
 }
-
+@media (min-width: 990px) and (max-width: 1200px) {
+  footer .social-footer{
+    .icon-nav{
+      margin-right: 6px;
+    }
+    .social-text{
+      font-size: 12px;
+      padding-top: 11px;
+    }
+  }
+}
 @media (min-width: 440px) and (max-width: 580px) {
   footer .contact-detail {
     text-align: left;
