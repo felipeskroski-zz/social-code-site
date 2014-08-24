@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "This is a test"
-date:   2014-08-25 10:33:07
+title: This is a test
+date: {}
 categories: test
+published: true
 ---
 
 Hello this is a test 
  
-*this is h1*
+## this is h1
+![felipe](/_posts/felipe.jpg)
 
 this are bullets 
 - hello
