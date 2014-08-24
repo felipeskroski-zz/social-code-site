@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "This is a test"
+date:   2014-08-25 10:33:07
+categories: test
+---
+
+Hello this is a test 
+ 
+*this is h1*
+
+this are bullets 
+- hello
+- hello
